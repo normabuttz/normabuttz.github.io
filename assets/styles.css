@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.woff") format("woff"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-armchair-chair-streamline:before {
+  content: "a";
+}
+.icon-arrow-streamline-target:before {
+  content: "b";
+}
+.icon-backpack-streamline-trekking:before {
+  content: "c";
+}
+.icon-bag-shopping-streamline:before {
+  content: "d";
+}
+.icon-bubble-comment-streamline-talk:before {
+  content: "e";
+}
+.icon-brush-paint-streamline:before {
+  content: "f";
+}
+.icon-ipad-streamline:before {
+  content: "g";
+}
+.icon-iphone-streamline:before {
+  content: "h";
+}
+.icon-envellope-mail-streamline:before {
+  content: "i";
+}
+.icon-ibook-laptop:before {
+  content: "j";
+}
+.icon-lock-locker-streamline:before {
+  content: "k";
+}
+.icon-locker-streamline-unlock:before {
+  content: "l";
+}
+.icon-like-love-streamline:before {
+  content: "m";
+}
+.icon-browser-streamline-window:before {
+  content: "n";
+}
+.icon-book-dowload-streamline:before {
+  content: "o";
+}
+.icon-clock-streamline-time:before {
+  content: "p";
+}
+.icon-cocktail-mojito-streamline:before {
+  content: "q";
+}
+.icon-map-pin-streamline:before {
+  content: "r";
+}
+.icon-streamline-umbrella-weather:before {
+  content: "s";
+}
+.icon-body-cut:before {
+  content: "t";
+}
+.icon-frankenstein:before {
+  content: "u";
+}
+.icon-hookah:before {
+  content: "v";
+}
+.icon-prostitute:before {
+  content: "w";
+}
+.icon-riot-squad:before {
+  content: "x";
+}
+.icon-inject:before {
+  content: "y";
+}
+.icon-fuck:before {
+  content: "z";
+}
+.icon-body-overlay:before {
+  content: "A";
+}
+.icon-boob:before {
+  content: "B";
+}
+.icon-garbage:before {
+  content: "C";
+}
+.icon-killer:before {
+  content: "D";
+}
+.icon-skull:before {
+  content: "E";
+}
+.icon-unicorn:before {
+  content: "F";
+}
+.icon-lick:before {
+  content: "G";
+}
+.icon-girl-gun:before {
+  content: "H";
+}
+.icon-car-burn:before {
+  content: "I";
+}
+.icon-death-boiling:before {
+  content: "J";
+}
+.icon-pee:before {
+  content: "K";
+}
+.icon-nuclear:before {
+  content: "L";
+}
+.icon-war:before {
+  content: "M";
+}
+.icon-voodoo:before {
+  content: "N";
+}
+.icon-poison-2:before {
+  content: "O";
+}
+.icon-poop:before {
+  content: "P";
+}
+.icon-head-stab-2:before {
+  content: "Q";
+}
+.icon-hippie:before {
+  content: "R";
+}
+.icon-fart:before {
+  content: "S";
+}
+.icon-eye-spilling:before {
+  content: "T";
+}
+.icon-head-shot-arrow:before {
+  content: "V";
+}
+.icon-pick-nose:before {
+  content: "U";
+}
+.icon-electrical-shock:before {
+  content: "W";
+}
+.icon-lumberjack:before {
+  content: "X";
+}

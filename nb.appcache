@@ -5,6 +5,12 @@ backbone-min.js
 jquery-1.11.3.min.js
 underscore-min.js
 
+/assets/fonts/untitled-font-1.eot
+/assets/fonts/untitled-font-1.svg
+/assets/fonts/untitled-font-1.ttf
+/assets/fonts/untitled-font-1.woff
+/assets/styles.css
+
 NETWORK:
 index.html
 nb_1.css

@@ -2,18 +2,78 @@
 <html manifest="nb.appcache">
 <head>
     <title></title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="backbone-min.js"></script>
     <script type="text/javascript" src="underscore-min.js"></script>
+    <script type="text/javascript" src="backbone-min.js"></script>
+    <script type="text/javascript" src="ab.js"></script>
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+
+
     <link rel="stylesheet" type="text/css" href="nb_1.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/styles.css"/>
     <script type="text/javascript">
+        $(function(){
+
+            $('p.test_a').click(ab.styleToggler('a', 'b', 150));
+            $('p.test_b').click(ab.styleToggler('a', ['a', 'b', 'c', 'd'], 150, "p.test_b"));
+            $('p.test_c').click(ab.styleToggler('a', ['b', 'c', 'd'], 150));
+
+            var test_d = ab.elmBinder($('p.test_d'), ab.styleToggler('a', ['a', 'b', 'c'], 250));
+            $('p.test_d').click(test_d);
+
+            $('body').keypress(function(e){
+                if(e.keyCode == 32){
+                    test_d();
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+            });
+
+        });
     </script>
 </head>
 <body>
-<nav class="floating-widget">
+<article class="content">
+    <p class="test_a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci, alias autem dolorem
+        dolores
+        eligendi, impedit ipsum iste magni modi necessitatibus nobis officiis perspiciatis provident, quas quos tempora
+        veniam voluptas.</p>
 
+    <p class="test_b">Facilis maiores, vitae? Animi consectetur corporis delectus deserunt dolor dolore, et harum inventore iure libero
+        modi necessitatibus nesciunt nisi non officia qui quis quod recusandae rem, repellat sit sunt velit.</p>
 
-</nav>
+    <p class="test_c">Ex laudantium nisi possimus quod recusandae sequi sint veritatis, voluptatem. Aspernatur aut
+        autem
+        blanditiis,
+        eligendi enim et explicabo ipsam magni non numquam omnis perferendis quam sunt unde veritatis. Laboriosam,
+        perspiciatis.</p>
+
+    <p class="test_d">Cupiditate dolorem eaque ex expedita maxime natus neque praesentium quis quos tenetur! Accusamus
+        aliquid,
+        corporis dignissimos earum facilis, laudantium libero minus nostrum quam quibusdam suscipit tenetur. Et facere
+        repellendus similique.</p>
+
+    <p>Adipisci aliquid assumenda autem corporis, dignissimos dolor enim, est expedita facere laboriosam laborum nemo
+        optio quasi qui quidem, recusandae reiciendis similique sint ut veniam! Eaque facere optio quas quisquam
+        repellendus!</p>
+
+    <p>Aliquid architecto autem enim, error hic id incidunt ipsa ipsam laudantium magni maxime nam odit quibusdam quis
+        reprehenderit sed voluptatem. Deserunt esse ipsam libero minima nesciunt officia placeat possimus rem.</p>
+
+    <p>Ab animi, asperiores, dolorum, error incidunt itaque labore minus neque nostrum nulla officia soluta unde
+        voluptas? Atque consectetur eius et magni nam, quam quos ratione repellat tempore ullam ut veniam!</p>
+
+    <p>Aliquam commodi consectetur culpa enim id obcaecati officia quis voluptas voluptate voluptates? Doloremque
+        fugiat, id incidunt inventore, iusto laboriosam, libero maxime natus nihil perferendis quis quisquam sed sequi
+        soluta suscipit.</p>
+
+    <p>Ad atque dolores, dolorum earum ex libero magni! Cum eaque id impedit porro quasi repellat voluptate! Debitis
+        dicta, doloremque enim, ipsum necessitatibus nemo quis sed, tempora totam ullam voluptate voluptatum?</p>
+
+    <p>Ad aliquam amet architecto aspernatur autem culpa delectus dolorem earum eum explicabo facilis id ipsa, maxime
+        minima molestiae nulla, odio officia porro quae quo sequi similique velit vitae voluptas voluptatem!</p>
+
+</article>
 </body>
 </html>
